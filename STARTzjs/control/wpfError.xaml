@@ -1,0 +1,20 @@
+﻿<Window x:Class="wpfError"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Error" Height="385" Width="649" Background="LightCoral">
+    <Grid>
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="20,15,0,0" Name="lblError" Text="{DynamicResource exceptionhappen}" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Foreground="DarkRed" />
+        <ScrollViewer Margin="20,40,20,110" Name="ScrollViewer1" HorizontalScrollBarVisibility="Visible">
+            <TextBox Name="txtError" IsReadOnly="True" Background="#FFF8EFEF" />
+        </ScrollViewer>
+        <TextBox Height="25" HorizontalAlignment="Stretch" Margin="20,20,20,50" Name="txtWhen" VerticalAlignment="Bottom" Text="" />
+        <TextBlock FontSize="14" FontWeight="Bold" Foreground="DarkRed" Height="23" HorizontalAlignment="Left" Margin="20,0,0,77" Name="TextBlock1" Text="{DynamicResource exceptionwhen}" VerticalAlignment="Bottom" />
+
+        <StackPanel Orientation="Horizontal"  Margin="20,0,0,15"  VerticalAlignment="Bottom">
+            <TextBlock FontSize="14" FontWeight="Bold" Foreground="DarkRed" Height="23" Name="TextBlock2" Text="{DynamicResource writeemail }" />
+            <TextBox Height="25" HorizontalAlignment="Stretch" Name="txtEmail" Margin="10,0" HorizontalContentAlignment="Center" MinWidth="150" VerticalContentAlignment="Center" />
+            <Button Content="{DynamicResource sendemail }" Padding="10,0" Width="Auto" HorizontalAlignment="Left" Margin="10,0" Name="btnSend" VerticalAlignment="Top" VerticalContentAlignment="Center" Height="25" ToolTip="{DynamicResource sendemailtip }"/>
+            <Button Content="{DynamicResource copyreport }" Padding="10,0" Width="Auto" HorizontalAlignment="Left" Margin="10,0" Name="btnCopy" VerticalAlignment="Top" VerticalContentAlignment="Center" Height="25" ToolTip="{DynamicResource copyreporttip }" />
+        </StackPanel>
+    </Grid>
+</Window>

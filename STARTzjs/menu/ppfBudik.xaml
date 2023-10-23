@@ -1,0 +1,296 @@
+﻿<Page x:Class="ppfBudik"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="720" >
+
+    <Grid Background="#FFFFFFFA" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+            <RowDefinition />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+        <Border Height="35" Margin="20,20,20,0" Name="Border1" VerticalAlignment="Top" CornerRadius="15" Background="LightGoldenrodYellow" />
+        <Label Content="{DynamicResource itbudik}" Height="35" HorizontalAlignment="Stretch" Margin="30,20,20,20" Name="lblHeader" VerticalAlignment="Top" Width="Auto" FontSize="18" FontWeight="Bold" />
+
+        <Grid Grid.Row="1" Name="Grid1" Margin="30,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="220" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40*" />
+                <ColumnDefinition Width="60*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="10,0,0,0" Text="{DynamicResource Executeaction }" VerticalAlignment="Top" FontWeight="Bold" Name="freZprava" Foreground="Sienna" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="10,0,0,0" Text="{DynamicResource Whencome}" VerticalAlignment="Top" FontSize="12" FontWeight="Bold" Name="freCas" Foreground="Sienna" />
+            <TabControl Grid.Column="1" Grid.RowSpan="1" Margin="0,20,0,0" Name="tabWhat">
+                <TabItem Header="{DynamicResource Showmessage}" Name="tbpMessage">
+                    <StackPanel Margin="5,10,5,5">
+                        <TextBlock Height="17" Text="{DynamicResource entermessage}" Foreground="Sienna" />
+                        <TextBox Name="txtZprava" TextWrapping="Wrap" MinHeight="25" Background="{StaticResource LightBrush}" VerticalContentAlignment="Center"/>
+                        <TextBlock Height="17" Text="{DynamicResource selectalarmsound}" Foreground="Sienna" />
+                        <WrapPanel  >
+                            <TextBox Name="txtZvuk" MinWidth="200" Height="25" MaxWidth="200" IsReadOnly="True" Background="WhiteSmoke" VerticalContentAlignment="Center"/>
+                            <Button Content="&gt;&gt;" FontSize="14" FontWeight="Bold" Height="25" Name="cmdZvuk" Width="30" Padding="0,0,0,2" />
+                        </WrapPanel  >
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="{DynamicResource tsendemail}" Name="tbpEmail">
+                    <StackPanel Margin="5,4,5,4">
+                        <TextBlock Height="17" Text="{DynamicResource tzprava}" Foreground="Sienna" />
+                        <TextBlock Height="17" Text="{DynamicResource tto}" Foreground="Sienna" />
+                        <TextBox Name="txtTo" TextWrapping="Wrap" MinHeight="22" Background="{StaticResource LightBrush}" VerticalContentAlignment="Center"/>
+                        <TextBlock Height="17" Text="{DynamicResource tfrompass}" Foreground="Sienna" />
+                        <TextBox Name="txtFrom" TextWrapping="Wrap" MinHeight="22" Background="{StaticResource LightBrush}" VerticalContentAlignment="Center"/>
+                        <StackPanel Orientation="Horizontal" Margin="0,5,0,0" >
+                            <PasswordBox Name="passBox" Background="{StaticResource LightBrush}" Width="170" />
+                            <Button Content="Test" FontSize="12" Name="cmdTest" Width="60" />
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="{DynamicResource mqtt}" Name="tbpMQTTp">
+                    <StackPanel Margin="5,12,5,5">
+                        <TextBlock Text="{DynamicResource TopicPublish}" TextWrapping="Wrap" Foreground="Sienna" Width="230" HorizontalAlignment="Left" />
+                        <TextBox Name="txtTopicP" MinHeight="25" Background="{StaticResource LightBrush}" VerticalContentAlignment="Center"/>
+                        <StackPanel Orientation="Horizontal" >
+                            <GroupBox Header="{DynamicResource Payload}" Height="47" HorizontalAlignment="Left" >
+                                <Grid Margin="-5,0,-4,0">
+                                    <TextBox Name="txtPayloadP" MaxLength="25" MinHeight="25" Background="{StaticResource LightBrush}" VerticalContentAlignment="Center"/>
+                                </Grid>
+                            </GroupBox>
+                        </StackPanel>
+                        <CheckBox Name="ckbReconnect" Content="{DynamicResource reconnectMQTT}" Height="18" Background="{StaticResource LightBrush}" />
+                    </StackPanel>
+                </TabItem>
+
+                <TabItem Header="{DynamicResource alarmstate}" Name="tbpAlarm">
+                    <StackPanel Margin="5,10,5,5">
+                        <TextBlock Name="lblAlarm" Text="{DynamicResource lblAlarm}" Foreground="Sienna" TextWrapping="Wrap" />
+                        <GroupBox Header="{DynamicResource changealarmstate}" Name="gbxAlarm" Margin="0,5,0,0" Height="45">
+                            <StackPanel Orientation="Horizontal" Height="20" Margin="0,5,0,0">
+                                <RadioButton Content="{DynamicResource tactivate}" IsChecked="True"  Height="20" Name="optAktivate" Foreground="Sienna" BorderBrush="Sienna" Padding="5,-2,15,0" GroupName="grpAla" FontSize="14" />
+                                <RadioButton Content="{DynamicResource tdeactivate}" Height="20" Name="optDeaktivate" Foreground="Sienna" BorderBrush="Sienna" Padding="5,-2,15,0" GroupName="grpAla" FontSize="14" />
+                            </StackPanel>
+                        </GroupBox>
+                    </StackPanel>
+                </TabItem>
+
+                <TabItem Header="{DynamicResource tcopy}" Name="tbpCopy">
+                    <StackPanel Margin="5,10,5,5">
+                        <TextBlock Height="15" Name="lblCopyFile" Text="{DynamicResource filecopy}" Foreground="Sienna" />
+                        <WrapPanel  >
+                            <TextBox Name="txtFileFrom" Text="" Padding="1,2,1,0" Height="25" IsReadOnly="True" Background="WhiteSmoke" VerticalAlignment="Center" Width="200" FlowDirection="RightToLeft" />
+                            <Button Content="&gt;&gt;" FontSize="14" FontWeight="Bold" Height="25" Name="cmdFileFrom" Width="30" Padding="0,0,0,2" />
+                        </WrapPanel  >
+                        <TextBlock Height="15" Name="lblDestination" Text="{DynamicResource destination }" Foreground="Sienna" />
+                        <WrapPanel  >
+                            <TextBox Name="txtFileTo" Text="" Padding="1,2,1,0" Height="25" IsReadOnly="True" Background="WhiteSmoke" VerticalAlignment="Center" Width="200" FlowDirection="RightToLeft" />
+                            <Button Content="&gt;&gt;" FontSize="14" FontWeight="Bold" Height="25" Name="cmdFileTo" Width="30" Padding="0,0,0,2" />
+                        </WrapPanel  >
+                        <CheckBox Name="ckbOverwrite" Content="{DynamicResource overwrite}" Background="{StaticResource LightBrush }" />
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="{DynamicResource ShutdownPC}" Name="tbpShutdown">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="151*"/>
+                            <ColumnDefinition Width="58*"/>
+                            <ColumnDefinition Width="84*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Height="55" Width="50"  HorizontalAlignment="Left" Margin="20,13,0,23.8" Name="picPower" VerticalAlignment="Stretch" Source="/STARTzjs;component/Images/shutdown/standby128.png" />
+                        <ComboBox Height="25" Foreground="Sienna" HorizontalAlignment="Stretch" Margin="100,26,29.6,35.8" Name="cbxShutdown" VerticalAlignment="Stretch" Grid.ColumnSpan="3" VerticalContentAlignment="Center" FontWeight="Bold" />
+                    </Grid>
+                </TabItem>
+                <TabItem Header="{DynamicResource Launchprogram }" Name="tbpRun">
+                    <StackPanel Margin="5,10,5,5" >
+                        <TextBlock Name="lblLunch" Text="{DynamicResource tenterappname}" Foreground="Sienna" TextWrapping="Wrap" />
+                        <WrapPanel Margin="0,5,0,0"  >
+                            <Image Name="imgApp" Height="25" />
+                            <TextBox Name="txtRun" Height="25" FontSize="14" MinWidth="170" IsReadOnly="False" Background="{StaticResource LightBrush}" VerticalContentAlignment="Center"/>
+                            <Button Content="&gt;&gt;" Height="25" FontSize="14" FontWeight="Bold" Name="cmdRun" Width="30" Padding="0,0,0,2" />
+                        </WrapPanel  >
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="{DynamicResource Closewindow}" Name="tbpClose">
+                    <StackPanel Margin="5,10,5,5">
+                        <TextBlock Height="15" Name="lblClose" Text="{DynamicResource chooserunningwindow}" Foreground="Sienna" />
+                        <WrapPanel  >
+                            <TextBox Name="lblShut" Width="200" FontSize="14" Height="25" IsReadOnly="True" Background="{StaticResource LightBrush}" VerticalContentAlignment="Center"/>
+                            <Button Content="&gt;&gt;" FontSize="14" FontWeight="Bold" Height="25" Name="cmdShut" Width="30" Padding="0,0,0,2" />
+                        </WrapPanel  >
+                        <GroupBox Header="{DynamicResource endprocessby}" Name="gbxProcess" Margin="0,5,0,0" Height="45">
+                            <StackPanel Orientation="Horizontal" Height="20" Margin="0,5,0,0">
+                                <RadioButton Content="ID" Height="20" Name="optShut0" Foreground="Sienna" BorderBrush="Sienna" Padding="5,-2,15,0" GroupName="wndR" IsChecked="True" FontSize="14" />
+                                <RadioButton Content="{DynamicResource tname}" Height="20" Name="optShut1" Foreground="Sienna" BorderBrush="Sienna" Padding="5,-2,15,0" GroupName="wndR" FontSize="14" IsChecked="True" />
+                                <RadioButton Content="{DynamicResource windowtitle}" Height="20" Name="optShut2" Foreground="Sienna" BorderBrush="Sienna" Padding="5,-2,15,0" GroupName="wndR" FontSize="14" IsChecked="True" />
+                            </StackPanel>
+                        </GroupBox>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="{DynamicResource tscreen}" Name="tbpDisplay">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="151*"/>
+                            <ColumnDefinition Width="58*"/>
+                            <ColumnDefinition Width="84*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Height="55" Width="50"  HorizontalAlignment="Left" Margin="15,15,0,25" Name="picDisplay" VerticalAlignment="Stretch" />
+                        <ComboBox Height="25" Foreground="Sienna" HorizontalAlignment="Stretch" Margin="85,25,20,35" Name="cbxDisplay" VerticalAlignment="Stretch" Grid.ColumnSpan="3" VerticalContentAlignment="Center" FontWeight="Bold" />
+                    </Grid>
+                </TabItem>
+                <TabItem Header="{DynamicResource Keys}" Name="tbpKeys">
+                    <StackPanel Margin="5,10,5,5">
+                        <TextBlock Text="{DynamicResource Keystroke }" TextWrapping="Wrap" Foreground="Sienna" />
+                        <TextBox Name="txtKeys" TextWrapping="Wrap" MinHeight="25" Background="{StaticResource LightBrush}" VerticalContentAlignment="Center"/>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="{DynamicResource Mute}" Name="tbpMute">
+                    <StackPanel Margin="5,10,5,5">
+                        <TextBlock Text="{DynamicResource MuteInfo }" TextWrapping="Wrap" Foreground="Sienna" />
+                    </StackPanel>
+                </TabItem>
+
+            </TabControl>
+
+            <TabControl Margin="0,20,0,0" Name="tabWhen">
+                <TabItem Header="{DynamicResource time}" Name="tbpTime">
+                    <WrapPanel Margin="5,10">
+                        <GroupBox Header="{DynamicResource thour}" Height="50" HorizontalAlignment="Left" Name="freHodin" VerticalAlignment="Top" Width="50">
+                            <Grid>
+                                <TextBox Name="txtHodin" Text="88" FontSize="15" FontWeight="Bold" HorizontalAlignment="Stretch" Padding="7,2,5,0" Foreground="Sienna" MaxLength="2" Background="{StaticResource LightBrush }" VerticalContentAlignment="Center"/>
+                            </Grid>
+                        </GroupBox>
+                        <GroupBox Header="{DynamicResource tminute}" Height="50" HorizontalAlignment="Left" Name="freMinut" VerticalAlignment="Top" Width="50">
+                            <Grid>
+                                <TextBox Name="txtMinut" Text="88" FontSize="15" FontWeight="Bold" HorizontalAlignment="Stretch" Padding="7,2,5,0" Foreground="Sienna" MaxLength="2" Background="{StaticResource LightBrush}" VerticalContentAlignment="Center"/>
+                            </Grid>
+                        </GroupBox>
+                        <GroupBox Header="{DynamicResource usetime}" Height="50" HorizontalAlignment="Left" Name="frePo" VerticalAlignment="Top" Width="110">
+                            <Grid>
+                                <ComboBox Name="cboPo" FontSize="12" Foreground="Sienna"   VerticalContentAlignment="Center" FontWeight="Bold" />
+                            </Grid>
+                        </GroupBox>
+                        <CheckBox Name="ckbInterval" Content="{DynamicResource interval}" Height="18" Background="{StaticResource LightBrush}" />
+                    </WrapPanel>
+                </TabItem>
+                <TabItem Header="{DynamicResource application }" Name="tbpWindow">
+                    <StackPanel>
+                        <GroupBox Header="{DynamicResource whentitlewindow}" Name="gbxWait" Height="50" Margin="0,10,0,0">
+                            <StackPanel Margin="0,2,0,0" Orientation="Horizontal" Height="20">
+                                <RadioButton Content="{DynamicResource originate }" Height="18" Name="rbnW0" Background="White" Foreground="Sienna" BorderBrush="Sienna" Padding="5,-2,5,0" GroupName="wnd" FontSize="13" />
+                                <RadioButton Content="{DynamicResource tend}" Height="18" Name="rbnW1" Foreground="Sienna" BorderBrush="Sienna" Padding="5,-2,5,0" GroupName="wnd" IsChecked="True" FontSize="13" />
+                                <RadioButton Content="{DynamicResource endwithID}" Height="18" Name="rbnW2" Foreground="Sienna" BorderBrush="Sienna" Padding="5,-2,5,0" GroupName="wnd" FontSize="13" />
+                            </StackPanel>
+                        </GroupBox>
+                        <StackPanel Orientation="Horizontal" Margin="5,5,0,0">
+                            <TextBox Name="txtWnd" Text="" Padding="1,2,1,0" Height="25" Width="200" IsReadOnly="False" Background="{StaticResource LightBrush }" VerticalContentAlignment="Center"/>
+                            <Button Content="&gt;&gt;" Height="25" Name="btnWnd" Width="30" FontWeight="Bold" Padding="0,0,0,2" FontSize="14" />
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="{DynamicResource directory }" Name="tbpDir">
+                    <StackPanel Margin="5,12,5,5">
+                        <TextBlock Text="{DynamicResource tselectfolder}" TextWrapping="Wrap" Foreground="Sienna" Width="230" HorizontalAlignment="Left" />
+                        <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                            <TextBox Name="lblFolder" Text="" Padding="1,2,1,0" Height="25" Width="200" IsReadOnly="True" Background="WhiteSmoke" VerticalAlignment="Center" />
+                            <Button Content="&gt;&gt;" Height="25" Name="cmdFolder" Width="30" FontWeight="Bold" Padding="0,0,0,2" FontSize="14" />
+                        </StackPanel>
+                        <GroupBox Header="{DynamicResource tchange}" HorizontalAlignment="Left"  >
+                            <Grid Margin="-5,0,-4,0">
+                                <ComboBox Name="cbxChange" FontSize="12" Foreground="Sienna" FontWeight="Bold" Grid.ColumnSpan="2"  />
+                            </Grid>
+                        </GroupBox>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="{DynamicResource tfile}" Name="tbpFile"  >
+                    <StackPanel Margin="5,12,5,5">
+                        <TextBlock Text="{DynamicResource tselectfile}" TextWrapping="Wrap" Foreground="Sienna" Width="230" HorizontalAlignment="Left" />
+                        <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                            <TextBox Name="txtWatchFile" Text="" Padding="1,2,1,0" Height="25" Width="200" IsReadOnly="True" Background="WhiteSmoke" VerticalAlignment="Center" />
+                            <Button Content="&gt;&gt;" Height="25" Name="cmdWatchFile" Width="30" FontWeight="Bold" Padding="0,0,0,2" FontSize="14" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" >
+                            <GroupBox Header="{DynamicResource gfile}" Margin="0,5,0,0" Visibility="Collapsed" >
+                                <StackPanel Orientation="Vertical"  Margin="0,5,0,0">
+                                    <RadioButton Content="{DynamicResource cchange}" Height="20" Name="optChange" Foreground="Sienna" BorderBrush="Sienna" Padding="5,-2,15,0" GroupName="wndR" IsChecked="True" FontSize="14" />
+                                    <RadioButton Content="{DynamicResource cvalue}" Height="20" Name="optValue" Foreground="Sienna" BorderBrush="Sienna" Padding="5,-2,15,0" GroupName="wndR" FontSize="14" />
+                                </StackPanel>
+                            </GroupBox>
+                            <GroupBox Header="&lt;&gt;" Height="47" HorizontalAlignment="Left" FontWeight="Bold" >
+                                <Grid Margin="-5,0,-4,0">
+                                    <ComboBox Name="cbxSymbolV" FontSize="12" Foreground="Sienna" FontWeight="Bold" />
+                                </Grid>
+                            </GroupBox>
+                            <GroupBox Header="{DynamicResource tvalue}" Height="47" HorizontalAlignment="Left" >
+                                <Grid Margin="-5,0,-4,0">
+                                    <TextBox Name="txtValue" MaxLength="25" MinHeight="25" Background="{StaticResource LightBrush}" VerticalContentAlignment="Center"/>
+                                </Grid>
+                            </GroupBox>
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="{DynamicResource mqtt}" Name="tbpMQTT">
+                    <StackPanel Margin="5,12,5,5">
+                        <TextBlock Text="{DynamicResource TopicSubscribe}" TextWrapping="Wrap" Foreground="Sienna" Width="230" HorizontalAlignment="Left" />
+                        <TextBox Name="txtTopicS" MinHeight="25" Background="{StaticResource LightBrush}" VerticalContentAlignment="Center"/>
+                        <StackPanel Orientation="Horizontal" >
+                            <GroupBox Header="&lt;&gt;" Height="47" HorizontalAlignment="Left" FontWeight="Bold" >
+                                <Grid Margin="-5,0,-4,0">
+                                    <ComboBox Name="cbxMQTT" FontSize="12" Foreground="Sienna" FontWeight="Bold" />
+                                </Grid>
+                            </GroupBox>
+                            <GroupBox Header="{DynamicResource Payload}" Height="47" HorizontalAlignment="Left" >
+                                <Grid Margin="-5,0,-4,0">
+                                    <TextBox Name="txtPayloadS" MaxLength="25" MinHeight="25" Background="{StaticResource LightBrush}" VerticalContentAlignment="Center"/>
+                                </Grid>
+                            </GroupBox>
+                        </StackPanel>
+                        <TextBlock Text="{DynamicResource SubscribeValue}" TextWrapping="Wrap" Foreground="Sienna" Width="248" HorizontalAlignment="Left" />
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+            <ListView Grid.Row="1" Name="lvwAlarm" Grid.ColumnSpan="2" Margin="0,0,100,0">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="{DynamicResource number}" DisplayMemberBinding="{Binding ID}" Width="20" />
+                        <GridViewColumn Header="{DynamicResource tbudik}" DisplayMemberBinding="{Binding Watch}" Width="40" />
+                        <GridViewColumn Header="{DynamicResource tkdy}" DisplayMemberBinding="{Binding When1}" Width="90" />
+                        <GridViewColumn Header="{DynamicResource tvalue}" DisplayMemberBinding="{Binding When4}" Width="40" />
+                        <GridViewColumn Header="{DynamicResource takce}" DisplayMemberBinding="{Binding Task}" Width="50" />
+                        <GridViewColumn Header="{DynamicResource tnastaveno}" DisplayMemberBinding="{Binding Data1}" Width="90" />
+                        <GridViewColumn Header="{DynamicResource tvalue}" DisplayMemberBinding="{Binding Data3}" Width="40" />
+                        <GridViewColumn Header="{DynamicResource tvolba2}" DisplayMemberBinding="{Binding Message}" Width="50" />
+                        <GridViewColumn Header="{DynamicResource taktivni}" >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <CheckBox IsChecked="{Binding Aktivni}" Name="ckbAktivni" IsThreeState="False" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="{DynamicResource topakovat}" >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <CheckBox IsChecked="{Binding Opakovat}" Name="ckbNemazat" IsThreeState="False" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <TextBox Grid.Column="2" Grid.Row="1" Name="txtBorder" HorizontalAlignment="Right" VerticalAlignment="Stretch" Width="100" Background="White" IsReadOnly="True" Margin="0,0,0,0" />
+            <StackPanel Grid.Column="2" Grid.Row="1" HorizontalAlignment="Right" Name="StackPanel4" VerticalAlignment="Stretch" Width="100" Background="White" Margin="0,0,0,2">
+                <Button Content="{DynamicResource tADD}" Height="26" Name="cmdPridat" Width="75" Margin="5,10,5,5" Background="{StaticResource ControlBrush}"/>
+                <Button Content="{DynamicResource tDEL}" Height="26" Name="cmdOdebrat" Width="75" Margin="5" Background="{StaticResource ControlBrush}"/>
+            </StackPanel>
+        </Grid>
+        <Button Content="{DynamicResource Startalarm}" Height="25" HorizontalAlignment="Left" Margin="25,15,0,0" Name="cmdAkt" VerticalAlignment="Top" Width="100" Grid.Row="2" Background="{StaticResource ControlBrush}"/>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Height="25" Margin="125,0,0,3">
+            <TextBlock Name="lblBudik" Text="88:88" Foreground="Sienna" FontSize="18" FontWeight="Bold" Margin="20,0" />
+            <TextBlock Name="lblCas" Text="88:88" Foreground="Sienna" FontSize="18" FontWeight="Bold" Margin="20,0" />
+            <TextBlock Name="lblZbyva" Text="88:88" Foreground="Sienna" FontSize="18" FontWeight="Bold" Margin="20,0" />
+        </StackPanel>
+    </Grid>
+</Page>

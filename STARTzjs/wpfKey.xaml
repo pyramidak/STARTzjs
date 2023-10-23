@@ -1,0 +1,10 @@
+﻿<Window x:Class="wpfKey"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="wpfKey" Height="150" Width="300" WindowStyle="None" WindowStartupLocation="CenterOwner" ShowInTaskbar="False" ResizeMode="NoResize" Name="wKey" AllowsTransparency="True" MinWidth="300" MinHeight="150">
+    <Grid Name="panGrid">
+        <Viewbox Name="Viewbox1" Stretch="Uniform">
+            <TextBlock Name="txtKey" Text="Stiskněte kombinaci kláves (Backspace zruší Hotkey)" TextWrapping="Wrap" FontSize="13" Padding="0,0" FontWeight="Normal" Margin="20,0" />
+        </Viewbox>
+    </Grid>
+</Window>

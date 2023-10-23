@@ -1,0 +1,78 @@
+﻿<Page x:Class="ppfImport"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="330" d:DesignWidth="550" >
+    
+    <Grid Background="#FFFFFFFA" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+            <RowDefinition />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+        <Border Height="35" Margin="20,20,20,0" Name="Border1" VerticalAlignment="Top" CornerRadius="15" Background="LightGoldenrodYellow" />
+        <Label Name="lblHeader" Content="{DynamicResource importpolozekdomenu}" Height="35" HorizontalAlignment="Stretch" Margin="30,20,20,20" VerticalAlignment="Top" Width="Auto" FontSize="18" FontWeight="Bold" />
+        <Button Content="Import" Height="25" HorizontalAlignment="Left" Margin="25,15,0,0" Name="btnAkce" VerticalAlignment="Top" Width="100" Grid.Row="2" IsEnabled="False" Background="{StaticResource ControlBrush}"/>
+        <Button Content="Export" Height="25" HorizontalAlignment="Left" Margin="150,15,0,0" Name="btnExport" VerticalAlignment="Top" Width="100" Grid.Row="2" IsEnabled="True" Background="{StaticResource ControlBrush}"/>
+        
+        <ListBox Name="lbxMenu" HorizontalContentAlignment="Left" Grid.Row="1" Margin="30,0" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel IsItemsHost="True" ItemWidth="240" Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBoxItem Tag ="Backup">
+                <StackPanel Orientation ="Horizontal"  Height="40">
+                    <Image Width="32" Height="32" Margin="4" Source="{StaticResource zarovka }" />
+                    <Label Content ="{DynamicResource zalohovanysoubor}" FontSize ="15" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem Tag ="Desktop">
+                <StackPanel Orientation ="Horizontal"  Height="40">
+                    <Image Width="32" Height="32" Margin="4" Source="{StaticResource desktop}" />
+                    <Label Content ="{DynamicResource zastupcinaplose}" FontSize ="15" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem Tag ="TaskBar">
+                <StackPanel Orientation ="Horizontal"  Height="40">
+                    <Image Width="32" Height="32" Margin="4" Source="{StaticResource desktop_taskbar}" />
+                    <Label Content ="{DynamicResource hlavnipanelwindows}" FontSize ="15" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem Tag ="Control">
+                <StackPanel Orientation ="Horizontal"  Height="40">
+                    <Image Width="32" Height="32" Margin="4" Source="/STARTzjs;component/Images/control/control128.png" />
+                    <Label Content ="{DynamicResource ovladacipanely}" FontSize ="15" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem Tag ="TotalCmd">
+                <StackPanel Orientation ="Horizontal"  Height="40">
+                    <Image Width="32" Height="32" Margin="4" Source="{StaticResource total_commander}" />
+                    <Label Content ="{DynamicResource tlacitkovalistatotalcmd}" FontSize ="15" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem Tag ="Shutdown">
+                <StackPanel Orientation ="Horizontal"  Height="40">
+                    <Image Width="32" Height="32" Margin="4" Source="/STARTzjs;component/Images/shutdown/standby128.png" />
+                    <Label Content ="{DynamicResource volbyvypnutisystemu}" FontSize ="15" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem Tag ="Vektiva">
+                <StackPanel Orientation ="Horizontal"  Height="40">
+                    <Image Width="32" Height="32" Margin="4" Source="/STARTzjs;component/Images/vektiva110.png" />
+                    <Label Content ="{DynamicResource vektiva}" FontSize ="15" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem Tag ="UWP">
+                <StackPanel Orientation ="Horizontal"  Height="40">
+                    <Image Width="32" Height="32" Margin="4" Source="/STARTzjs;component/Images/winstore128.png" />
+                    <Label Content ="{DynamicResource winstore}" FontSize ="15" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+            </ListBoxItem>
+
+        </ListBox>
+        
+    </Grid>
+</Page>

@@ -1,0 +1,19 @@
+﻿<Page x:Class="ppfInfo"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="770" d:DesignWidth="642" >
+
+    <Grid Background="#FFFFFFFA">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+            <RowDefinition />
+            <RowDefinition Height="25" />
+        </Grid.RowDefinitions>
+        <Border Height="35" Margin="20,20,20,0" Name="Border1" VerticalAlignment="Top" CornerRadius="15" Background="LightGoldenrodYellow" />
+        <Label Content="{DynamicResource seznamtesesovladanim}" Height="35" HorizontalAlignment="Stretch" Margin="30,20,20,20" Name="lblHeader" VerticalAlignment="Top" Width="Auto" FontSize="18" FontWeight="Bold" />
+        <FlowDocumentScrollViewer MaxHeight="500" Name="FlowDocViewer" Grid.Row="1" Margin="10,-15,20,0" Document="{DynamicResource napoveda}" />
+    </Grid>
+</Page>

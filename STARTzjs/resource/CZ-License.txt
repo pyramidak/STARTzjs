@@ -1,0 +1,16 @@
+Toto je zákonné ujednání ("Licenèní smlouva") mezi Vámi (buï osobou nebo spoleèností) a Zdeòkem Jantaèem ("Autorem") pro tento softwarovı produkt "STARTzjs" ("Software"). 
+KOPÍROVÁNÍM NEBO POUÍVÁNÍM TOHOTO SOFTWARU V KTERÉMKOLIV PØÍPADÌ, SOUHLASÍTE A JSTE VÁZÁN(A) VŠEMI PODMÍNKAMI TÉTO LICENCE.
+
+STARTzjs je FREEWARE. Mùete volnì pouívat tento software (program) a distribuovat kopie originálního archívu (instalaèního souboru) pokud nezasáhnete do obsahu a nebudete na programu vydìlávat. Pouze odpovídající poplatky za distribuci jsou povolené. Jakákoliv jiná cesta distribuce tohoto programu je zakázána.
+
+Nesmíte upravovat, dekompilovat nebo rozebírat soubory tohoto softwaru. Samozøejmì mùete upravovat a vytváøet databáze pomocí tohoto programu.
+
+Program nespadá do veøejné oblasti softwaru. Tento software je vlastnìn Zdeòkem Jantaèem a chránìn autorskıch zákonem.
+
+Autor vıslovnì odmítá poskytnutí jakıkoliv záruk pro tento software. Aplikace a jakákoliv související dokumentace je poskytnuta "taková jaká je" BEZ JAKİKOLIV ZÁRUK, a u explicitních nebo implicitních. Veškeré riziko vyplıvající uitím nebo pøedvádìním tohoto softwaru zùstává na Vás.
+
+V kadém pøípadì autor NENÍ odpovìdnı za jakékoliv škody (ušlé ztráty na ziscích, pøerušení podnikatelské èinnosti, obchodní ztráty, ztráty informací, nebo kterékoliv další penìní ztráty) vyplívající uitím nebo neschopností pouívat takovı software nebo jeho monou dokumentaci a to dokonce i kdyby autor byl seznámen s moností takovıch ztrát.
+
+POKUD NESOUHLASÍTE SE VŠEMI PODMÍNKAMI TOHOTO UJEDNÁNÍ, NEINSTALUJTE A NEPOUÍVEJTE TENTO PRODUKT.
+
+MMQTnet knihovna copyright (c) 2016-2019 Christian Kratky

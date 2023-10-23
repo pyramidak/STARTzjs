@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="setProgs" targetNamespace="http://tempuri.org/setProgs.xsd" xmlns:mstns="http://tempuri.org/setProgs.xsd" xmlns="http://tempuri.org/setProgs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="setProgs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="setProgs" msprop:Generator_UserDSName="setProgs">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tableTheme" msprop:Generator_UserTableName="tableTheme" msprop:Generator_RowEvArgName="tableThemeRowChangeEvent" msprop:Generator_TableVarName="tabletableTheme" msprop:Generator_TablePropName="tableTheme" msprop:Generator_RowDeletingName="tableThemeRowDeleting" msprop:Generator_RowChangingName="tableThemeRowChanging" msprop:Generator_RowDeletedName="tableThemeRowDeleted" msprop:Generator_RowEvHandlerName="tableThemeRowChangeEventHandler" msprop:Generator_TableClassName="tableThemeDataTable" msprop:Generator_RowChangedName="tableThemeRowChanged" msprop:Generator_RowClassName="tableThemeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="theme" msprop:Generator_ColumnVarNameInTable="columntheme" msprop:Generator_ColumnPropNameInRow="theme" msprop:Generator_ColumnPropNameInTable="themeColumn" msprop:Generator_UserColumnName="theme" type="xs:string" />
+              <xs:element name="hidden" msprop:Generator_ColumnVarNameInTable="columnhidden" msprop:Generator_ColumnPropNameInRow="hidden" msprop:Generator_ColumnPropNameInTable="hiddenColumn" msprop:Generator_UserColumnName="hidden" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="sorted" msprop:Generator_ColumnVarNameInTable="columnsorted" msprop:Generator_ColumnPropNameInRow="sorted" msprop:Generator_ColumnPropNameInTable="sortedColumn" msprop:Generator_UserColumnName="sorted" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="tableProgs" msprop:Generator_UserTableName="tableProgs" msprop:Generator_RowEvArgName="tableProgsRowChangeEvent" msprop:Generator_TableVarName="tabletableProgs" msprop:Generator_TablePropName="tableProgs" msprop:Generator_RowDeletingName="tableProgsRowDeleting" msprop:Generator_RowChangingName="tableProgsRowChanging" msprop:Generator_RowDeletedName="tableProgsRowDeleted" msprop:Generator_RowEvHandlerName="tableProgsRowChangeEventHandler" msprop:Generator_TableClassName="tableProgsDataTable" msprop:Generator_RowChangedName="tableProgsRowChanged" msprop:Generator_RowClassName="tableProgsRow" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" type="xs:string" />
+                    <xs:element name="theme" msprop:Generator_ColumnVarNameInTable="columntheme" msprop:Generator_ColumnPropNameInRow="theme" msprop:Generator_ColumnPropNameInTable="themeColumn" msprop:Generator_UserColumnName="theme" type="xs:string" minOccurs="0" />
+                    <xs:element name="path" msprop:Generator_ColumnVarNameInTable="columnpath" msprop:Generator_ColumnPropNameInRow="path" msprop:Generator_ColumnPropNameInTable="pathColumn" msprop:Generator_UserColumnName="path" type="xs:string" minOccurs="0" />
+                    <xs:element name="hidden" msprop:Generator_ColumnVarNameInTable="columnhidden" msprop:Generator_ColumnPropNameInRow="hidden" msprop:Generator_ColumnPropNameInTable="hiddenColumn" msprop:Generator_UserColumnName="hidden" type="xs:boolean" default="false" minOccurs="0" />
+                    <xs:element name="highlight" msprop:Generator_ColumnVarNameInTable="columnhighlight" msprop:Generator_ColumnPropNameInRow="highlight" msprop:Generator_ColumnPropNameInTable="highlightColumn" msprop:Generator_UserColumnName="highlight" type="xs:boolean" default="false" minOccurs="0" />
+                    <xs:element name="icon" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="icon" msprop:Generator_ColumnVarNameInTable="columnicon" msprop:Generator_ColumnPropNameInTable="iconColumn" msprop:Generator_UserColumnName="icon" type="xs:string" minOccurs="0" />
+                    <xs:element name="iconindex" msprop:Generator_ColumnVarNameInTable="columniconindex" msprop:Generator_ColumnPropNameInRow="iconindex" msprop:Generator_ColumnPropNameInTable="iconindexColumn" msprop:Generator_UserColumnName="iconindex" type="xs:int" default="0" minOccurs="0" />
+                    <xs:element name="iMod" msprop:Generator_ColumnVarNameInTable="columniMod" msprop:Generator_ColumnPropNameInRow="iMod" msprop:Generator_ColumnPropNameInTable="iModColumn" msprop:Generator_UserColumnName="iMod" type="xs:int" minOccurs="0" />
+                    <xs:element name="iKey" msprop:Generator_ColumnVarNameInTable="columniKey" msprop:Generator_ColumnPropNameInRow="iKey" msprop:Generator_ColumnPropNameInTable="iKeyColumn" msprop:Generator_UserColumnName="iKey" type="xs:int" minOccurs="0" />
+                    <xs:element name="type" msprop:Generator_ColumnVarNameInTable="columntype" msprop:Generator_ColumnPropNameInRow="type" msprop:Generator_ColumnPropNameInTable="typeColumn" msprop:Generator_UserColumnName="type" type="xs:int" minOccurs="0" />
+                    <xs:element name="folder" msprop:Generator_ColumnVarNameInTable="columnfolder" msprop:Generator_ColumnPropNameInRow="folder" msprop:Generator_ColumnPropNameInTable="folderColumn" msprop:Generator_UserColumnName="folder" type="xs:boolean" minOccurs="0" />
+                    <xs:element name="admin" msprop:Generator_ColumnVarNameInTable="columnadmin" msprop:Generator_ColumnPropNameInRow="admin" msprop:Generator_ColumnPropNameInTable="adminColumn" msprop:Generator_UserColumnName="admin" type="xs:boolean" default="false" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint2" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tableProgs" />
+      <xs:field xpath="mstns:name" />
+    </xs:unique>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tableTheme" />
+      <xs:field xpath="mstns:theme" />
+    </xs:unique>
+    <xs:keyref name="tableTheme_tableProgs" refer="Constraint1" msdata:IsNested="true" msprop:rel_Generator_UserChildTable="tableProgs" msprop:rel_Generator_ChildPropName="GettableProgsRows" msprop:rel_Generator_UserRelationName="tableTheme_tableProgs" msprop:rel_Generator_RelationVarName="relationtableTheme_tableProgs" msprop:rel_Generator_UserParentTable="tableTheme" msprop:rel_Generator_ParentPropName="tableThemeRow" msdata:AcceptRejectRule="Cascade">
+      <xs:selector xpath=".//mstns:tableProgs" />
+      <xs:field xpath="mstns:theme" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

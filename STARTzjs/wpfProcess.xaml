@@ -1,0 +1,18 @@
+﻿<Window x:Class="wpfProcess"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:RootSpace"
+    Title="wpfProcess" Height="300" Width="500" Name="wProcess" Icon="/STARTzjs;component/STARTzjs.ico" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <ListView Name="lvwProcess" ItemsSource="{Binding ElementName=wProcess, Path=Kolekce}" Background="FloralWhite">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Process ID" x:Name="chdID" DisplayMemberBinding="{Binding Path=ID}" />
+                    <GridViewColumn Header="Process Name" x:Name="chdName" DisplayMemberBinding="{Binding Path=Name}"/>
+                    <GridViewColumn Header="chdPriority" x:Name="chdPriority" DisplayMemberBinding="{Binding Path=Priority}"/>
+                    <GridViewColumn Header="Main Window Title" x:Name="chdTitle" DisplayMemberBinding="{Binding Path=Title}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

@@ -1,0 +1,18 @@
+﻿<Application x:Class="Application"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    ShutdownMode="OnMainWindowClose"
+    DispatcherUnhandledException="App_DispatcherUnhandledException"
+    StartupUri="wpfMain.xaml">
+    
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="resource\rsdListBox.xaml"/>
+                <ResourceDictionary Source="resource\rsdSettingIkony.xaml"/>
+                <ResourceDictionary Source="resource\rsdMenuIkony.xaml"/>
+                <ResourceDictionary Source="resource\CZ-String.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,16 @@
+This is a legal agreement ("License Agreement") between you (either personal or corporate) and Zdenìk Jantaè ("Author"), for the software product "STARTzjs" ("Software").
+BY COPYING OR USING THE SOFTWARE IN ANY KIND, YOU AGREE TO BE BOUND BY ALL OF THE TERMS AND CONDITIONS OF THIS LICENSE AND DISCLAIMER AGREEMENT.
+
+STARTzjs is FREEWARE. You can freely use this software and distribute copies of the ORIGINAL ARCHIVE as long as NO ALTERATIONS are made to the contents and no charge is raised except a reasonable fee for distributing costs. Any other way of distribution of this software is prohibited.
+
+You may not modify, reverse engineer, decompile or disassemble the files of this software.
+
+This is not public domain software. The software is owned by Zdenìk Jantaè and protected by copyright law.
+
+The author expressly disclaims any warranty for the software. The application and any related documentation is provided "as is" WITHOUT ANY WARRANTIES, either express or implied, including, but not limited to, implied warranties of fitness for a particular purpose. The entire risk arising out of use or performance of the software remains with you.
+
+In no event shall the author be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or any other pecuniary loss) arising out of the use of or inability to use this software or documentation, even if the author has been advised of the possibility of such damages.
+
+IF YOU DO NOT AGREE WITH ALL TERMS OF THIS LICENSE YOU DO NOT HAVE TO INSTALL OR USE THIS PROGRAM.
+
+MMQTnet library copyright (c) 2016-2019 Christian Kratky

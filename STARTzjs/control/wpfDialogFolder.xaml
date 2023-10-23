@@ -1,0 +1,21 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:RootSpace" x:Name="wTree" x:Class="wpfDialogFolder"
+    Background="{StaticResource DisabledBrush}"  Height="400" Width="300" ResizeMode="CanResizeWithGrip" ShowInTaskbar="False" WindowStartupLocation="CenterOwner" MinWidth="250" MinHeight="300" SizeToContent="Width" >
+    <Window.Resources>
+
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+
+        <local:uctTreeBrowser x:Name="mTreeView" BackColor="{StaticResource LightBrush}" />
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="5" >
+            <Button x:Name="btnOK" Content="OK" Background="{StaticResource ControlBrush}" Width="75" VerticalContentAlignment="Center" Margin="10,0" IsDefault="True" />
+            <Button x:Name="btnCancel" Content="{DynamicResource storno}" Background="{StaticResource ControlBrush}" Width="75" VerticalContentAlignment="Center" Margin="0,0,0,-0.2" IsCancel="True" />
+        </StackPanel>
+    </Grid>
+</Window>

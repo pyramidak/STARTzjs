@@ -1,0 +1,52 @@
+﻿<Page x:Class="ppfSave"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="349" d:DesignWidth="552">
+
+    <Grid Background="#FFFFFFFA" Width="Auto">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+            <RowDefinition />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+        <Border Height="35" Margin="20,20,20,0" Name="Border1" VerticalAlignment="Top" CornerRadius="15" Background="LightGoldenrodYellow" />
+        <Label Content="{DynamicResource umistenidatovehosouboru}" Height="35" HorizontalAlignment="Stretch" Margin="30,20,20,20" Name="lblHeader" VerticalAlignment="Top" Width="Auto" FontSize="18" FontWeight="Bold" />
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30*" />
+                <ColumnDefinition Width="30*" />
+                <ColumnDefinition Width="30*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Height="auto" HorizontalAlignment="Stretch" Margin="30,0" VerticalAlignment="Top" Width="Auto" >        
+                <StackPanel Height="50" HorizontalAlignment="Stretch" Width="Auto" Orientation="Horizontal" VerticalAlignment="Center"  >
+                    <Image Source="/STARTzjs;component/Images/folder/Documents128.png" Height="30"  Width="30" />
+                    <RadioButton Name="rbtDocuments" Content="{DynamicResource dokumenty}" Margin="20,15,0,0" GroupName="cloud"/>
+                </StackPanel>
+                <StackPanel Height="50" HorizontalAlignment="Stretch" Width="Auto" Orientation="Horizontal">
+                    <Image Source="{StaticResource OneDrive }" Height="30"  Width="30" />
+                    <RadioButton Name="rbtOneDrive" Content="OneDrive" Margin="20,15,0,0" GroupName="cloud"/>
+                </StackPanel>
+                <StackPanel Height="50" HorizontalAlignment="Stretch" Width="Auto" Orientation="Horizontal">
+                    <Image Source="{StaticResource DropBox }" Height="30"  Width="30" />
+                    <RadioButton Name="rbtDropBox" Content="DropBox" Margin="20,15,0,0" GroupName="cloud"/>
+                </StackPanel>
+                <StackPanel Height="50" HorizontalAlignment="Stretch" Width="Auto" Orientation="Horizontal">
+                    <Image Source="{StaticResource GoogleDrive }" Height="30"  Width="30" />
+                    <RadioButton Name="rbtGoogleDrive" Content="GoogleDisk" Margin="20,15,0,0" GroupName="cloud"/>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Height="auto" HorizontalAlignment="Stretch" Margin="30,0" VerticalAlignment="Top" Width="Auto" >
+                <StackPanel Height="50" HorizontalAlignment="Stretch" Width="Auto" Orientation="Horizontal">
+                    <Image Source="{StaticResource Sync }" Height="30"  Width="30" />
+                    <RadioButton Name="rbtSync" Content="Sync" Margin="20,15,0,0" GroupName="cloud"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <Button Content="{DynamicResource ulozit}" Grid.Row="2" Height="25" HorizontalAlignment="Left" Margin="25,15,0,0" x:Name="btnSave" VerticalAlignment="Top" Width="100" Background="{StaticResource ControlBrush}"/>
+        </Grid>
+</Page>

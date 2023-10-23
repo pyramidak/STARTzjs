@@ -1,0 +1,235 @@
+<ResourceDictionary xmlns ="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <!-- Buttons -->
+    <system:String x:Key="zavrit">Close</system:String>
+    <system:String x:Key="ulozit">Save</system:String>
+    <system:String x:Key="aktualizovat">Update</system:String>
+    <system:String x:Key="pridat">Add</system:String>
+    <system:String x:Key="odebrat">Remove</system:String>
+    <system:String x:Key="storno">Cancel</system:String>
+    <system:String x:Key="prejmenovat">Rename</system:String>
+    <system:String x:Key="smazat">Delete</system:String>
+
+    <!-- Menu item -->
+    <system:String x:Key="vysypat">Empty</system:String>
+    <system:String x:Key="otevritslozku">Open folder</system:String>
+    <system:String x:Key="umisteni">Location</system:String>
+    <system:String x:Key="arguments">Arguments</system:String>
+    <system:String x:Key="ikona">Icon</system:String>
+    <system:String x:Key="zmenitzdroj">Change source</system:String>
+    <system:String x:Key="ulozitikonu">Save icon</system:String>
+    <system:String x:Key="hotkey">HotKey</system:String>
+    <system:String x:Key="zvyrazneny">Highlighted</system:String>
+    <system:String x:Key="skryty">Hidden</system:String>
+    <system:String x:Key="admin">Admin</system:String>
+    <system:String x:Key="autostart">Autostart</system:String>
+    <system:String x:Key="odinstalovat">Uninstall</system:String>
+    <system:String x:Key="spoustetjakospravce">Run as admin</system:String>
+    <system:String x:Key="spoustetswindows">Start with Windows</system:String>
+    <system:String x:Key="pridatprogramy">Add program</system:String>
+    <system:String x:Key="pridatslozku">Add folder</system:String>
+    <system:String x:Key="pridatlink">Add link</system:String>
+    <system:String x:Key="hidestart">API action</system:String>
+    <system:String x:Key="vloztelink">Enter weblink</system:String>
+    <system:String x:Key="apilink">API action run in background</system:String>
+    <!-- Menu column -->
+    <system:String x:Key="tema">Thema</system:String>
+    <system:String x:Key="spustitprogramy">Run all</system:String>
+    <system:String x:Key="polozkyabecedne">Sort alphabetically</system:String>
+    <system:String x:Key="skrytysloupec">Hidden column</system:String>
+    <system:String x:Key="odstranitsloupec">Remove column</system:String>
+    <system:String x:Key="novysloupec">New column</system:String>
+    <system:String x:Key="schovatskryte">Hide hidden</system:String>
+    <system:String x:Key="jmeno">Name</system:String>
+    <system:String x:Key="napistectyricislice">Enter four digits.</system:String>
+    <system:String x:Key="vyhledatnenalezene">Search for missing</system:String>
+    <system:String x:Key="odebratnenalezene">Remove missing</system:String>
+
+    <!-- Setting -->
+    <system:String x:Key="nastavenistartzjs">STARTzjs Setting</system:String>
+    <system:String x:Key="oprogramu">About</system:String>
+    <system:String x:Key="ovladani">Control</system:String>
+    <system:String x:Key="importovat">Import</system:String>
+    <system:String x:Key="vzhled">View</system:String>
+    <system:String x:Key="budik">TAPs</system:String>
+    <system:String x:Key="ukladani">Location</system:String>
+    <!-- About -->
+    <system:String x:Key="autokontrolanoveverze">Check new version</system:String>
+    <system:String x:Key="spoustetpristartuwindows">Start with Windows</system:String>
+    <!-- Windows -->
+    <system:String x:Key="windowshake">Window shake minimizes all windows</system:String>
+    <system:String x:Key="hibernate">System hibernation active</system:String>
+    <!-- Look of Menu -->
+    <system:String x:Key="vzhledmenu">Look of menu</system:String>
+	<system:String x:Key="itemlook">Look of Items</system:String>
+    <system:String x:Key="barvamotivuwindows">Color of Windows Theme</system:String>
+    <system:String x:Key="barvaplochy">Color of Desktop</system:String>
+    <system:String x:Key="vlastnibarva">Own Color</system:String>
+    <system:String x:Key="pruhlednost">Transparency</system:String>
+    <system:String x:Key="velikostikon">Icon size</system:String>
+    <!-- MQTT -->
+    <system:String x:Key="broker">Broker IP address</system:String>
+    <system:String x:Key="port">Port</system:String>
+    <system:String x:Key="user">User</system:String>
+    <system:String x:Key="pass">Password</system:String>
+    <system:String x:Key="connectiontest">Test connection</system:String>
+    <!-- Alarm -->
+    <system:String x:Key="tbudik">Trigger</system:String>
+    <system:String x:Key="itbudik">Trigger-Action Plans with MQTT</system:String>
+    <system:String x:Key="tkdy">IF</system:String>
+    <system:String x:Key="takce">Action</system:String>
+    <system:String x:Key="tnastaveno">Setting</system:String>
+    <system:String x:Key="tvolba1">Option</system:String>
+    <system:String x:Key="tvolba2">Event</system:String>
+    <system:String x:Key="taktivni">Active</system:String>
+    <system:String x:Key="topakovat">Repeat</system:String>
+    <system:String x:Key="time">Time</system:String>
+    <system:String x:Key="directory">Directory</system:String>
+    <system:String x:Key="application">Application</system:String>
+    <system:String x:Key="whentitlewindow">when window title of application</system:String>
+    <system:String x:Key="originate">originate</system:String>
+    <system:String x:Key="tend">end</system:String>
+    <system:String x:Key="endwithID">end with ID</system:String>
+    <system:String x:Key="tminute">minute</system:String>
+    <system:String x:Key="thour">hour</system:String>
+    <system:String x:Key="Whencome">Trigger</system:String>
+    <system:String x:Key="tADD">ADD</system:String>
+    <system:String x:Key="tDEL">DEL</system:String>
+    <system:String x:Key="Startalarm">Start</system:String>
+    <system:String x:Key="usetime">use time</system:String>
+    <system:String x:Key="Executeaction">Action</system:String>
+    <system:String x:Key="Launchprogram">Launch program</system:String>
+    <system:String x:Key="ShutdownPC">Shutdown PC</system:String>
+    <system:String x:Key="Openfile">Open file</system:String>
+    <system:String x:Key="Closewindow">Close application</system:String>
+    <system:String x:Key="Showmessage">Show message</system:String>
+    <system:String x:Key="endprocessby">end process by</system:String>
+    <system:String x:Key="tname">name</system:String>
+    <system:String x:Key="windowtitle">window title</system:String>
+    <system:String x:Key="tselectfolder">Select folder, in which the number of files will be count</system:String>
+    <system:String x:Key="tselectfile">Select file with one value in it to watch for a change.</system:String>
+    <system:String x:Key="entermessage">enter message</system:String>
+    <system:String x:Key="selectalarmsound">select alarm sound</system:String>
+    <system:String x:Key="chooserunningwindow">choose a running application</system:String>
+    <system:String x:Key="tenterappname">Enter item name of STARTzjs menu or choose application:</system:String>
+    <system:String x:Key="t5">in 5 minutes</system:String>
+    <system:String x:Key="t10">in 10 minutes</system:String>
+    <system:String x:Key="t15">in 15 minutes</system:String>
+    <system:String x:Key="t30">in 30 minutes</system:String>
+    <system:String x:Key="t1">in an hour</system:String>
+    <system:String x:Key="t2">in 2 hours</system:String>
+    <system:String x:Key="t4">in 4 hours</system:String>
+    <system:String x:Key="t6">in 6 hours</system:String>
+    <system:String x:Key="t12">in 12 hours</system:String>
+    <system:String x:Key="t24">in a day</system:String>
+    <system:String x:Key="tLock">Lock</system:String>
+    <system:String x:Key="tUnlock">Unlock</system:String>
+    <system:String x:Key="StandBy">StandBy</system:String>
+    <system:String x:Key="LogOff">LogOff</system:String>
+    <system:String x:Key="PowerOff">PowerOff</system:String>
+    <system:String x:Key="Restart">Restart</system:String>
+    <system:String x:Key="mqtt">MQTT</system:String>
+    <system:String x:Key="choosetopic">The CSV file contains in this order: Device, Variable, Value, Date&amp;Time</system:String>
+    <system:String x:Key="cbxDevice">Device</system:String>
+    <system:String x:Key="cbxVariable">Variable</system:String>
+    <system:String x:Key="tvalue">Value</system:String>
+    <system:String x:Key="choosefile">Choose file with only one value that will be regularly checked.</system:String>
+    <system:String x:Key="gfile">Watch for</system:String>
+    <system:String x:Key="cchange">change</system:String>
+    <system:String x:Key="cvalue">value</system:String>
+    <system:String x:Key="tfile">File</system:String>
+    <system:String x:Key="ckbStop">Stop program</system:String>
+    <system:String x:Key="alarmstate">Plan state</system:String>
+    <system:String x:Key="lblAlarm">Select form the plan list the plan you want to change the status for.</system:String>
+    <system:String x:Key="changealarmstate">Change plan state</system:String>
+    <system:String x:Key="tactivate">Activate</system:String>
+    <system:String x:Key="tdeactivate">Deactivate</system:String>
+    <system:String x:Key="number">No.</system:String>
+    <system:String x:Key="tsendemail">Send email</system:String>
+    <system:String x:Key="tto">Email recipient</system:String>
+    <system:String x:Key="tfrompass">User email and password</system:String>
+    <system:String x:Key="tzprava">Message enter in tab Show message.</system:String>
+    <system:String x:Key="tcopy">Copy file</system:String>
+    <system:String x:Key="filecopy">This file from</system:String>
+    <system:String x:Key="destination">To this destination</system:String>
+    <system:String x:Key="overwrite">Overwrite</system:String>
+    <system:String x:Key="tchange">Change event</system:String>
+    <system:String x:Key="tscreen">Screen mode</system:String>
+    <system:String x:Key="DisplayInternal">Main screen</system:String>
+    <system:String x:Key="DisplayClone">Clone screen</system:String>
+    <system:String x:Key="DisplayExtend">Extend screen</system:String>
+    <system:String x:Key="DisplayExternal">Second screen</system:String>
+    <system:String x:Key="TopicSubscribe">Subscribe Topic</system:String>
+    <system:String x:Key="SubscribeValue">If you leave Payload empty, any recieved Payload starts an action. Recieved Payload is always used in message, email or as keystroke.</system:String>
+    <system:String x:Key="TopicPublish">Publish Topic</system:String>
+    <system:String x:Key="Payload">Payload</system:String>
+    <system:String x:Key="reconnectMQTT">Reconnect the client.</system:String>
+    <system:String x:Key="Keys">Keystroke</system:String>
+    <system:String x:Key="Keystroke">Enter keys to be pressed. For example by pressing space key you may pause a playing video.</system:String>
+    <system:String x:Key="Mute">Mute sound</system:String>
+    <system:String x:Key="MuteInfo">Action mute or unmute sound.</system:String>
+    <system:String x:Key="interval">Use the time as repeating Interval</system:String>
+    
+    <!-- Import -->
+    <system:String x:Key="importpolozekdomenu">Import items to menu</system:String>
+    <system:String x:Key="zalohovanysoubor">Backup File</system:String>
+    <system:String x:Key="zastupcinaplose">Desktop Shortcuts</system:String>
+    <system:String x:Key="ovladacipanely">Control Panels</system:String>
+    <system:String x:Key="hlavnipanelwindows">Windows Taskbar</system:String>
+    <system:String x:Key="tlacitkovalistatotalcmd">TotalCmd Buttons Panel</system:String>
+    <system:String x:Key="volbyvypnutisystemu">System Shutdown Options</system:String>
+    <system:String x:Key="vektiva">Vektiva.com API</system:String>
+    <system:String x:Key="vektivaopen">Open window</system:String>
+    <system:String x:Key="vektivaclose">Close window</system:String>
+    <system:String x:Key="vektivastop">Unfix window</system:String>
+    <system:String x:Key="vektivafix">Fix window</system:String>
+    <system:String x:Key="vektivaapi">For window control of Vektiva device enter from web vektiva.online from menu User Account 'Remote ID' and 'Remote KEY' and from Control Center in Setting tab Info is 'Device ID'. Values must separated by character '/'.</system:String>
+    <system:String x:Key="winstore">Windows Store</system:String>
+    <!-- Location -->
+    <system:String x:Key="umistenidatovehosouboru">Location of data file</system:String>
+    <system:String x:Key="dokumenty">Documents</system:String>
+    <!-- Information -->
+    <system:String x:Key="seznamtesesovladanim">Controls and shortkeys</system:String>
+    <system:String x:Key="roztahnout">Fit to screen</system:String>
+    <FlowDocument x:Key="napoveda" FontFamily="Segoe UI" FontSize="13">
+        <Paragraph Margin="0,0,0,10" FontWeight="Bold" >STARTzjs Menu, ALT + S</Paragraph>
+        <Paragraph Margin="0,5" >STARTzjs programu icon is not in systray anymore, only in taskbar. From Windows 8 you can pin the program icon to your desire place of taskbar and have STARTzjs menu where you need. You can open menu by clicking on icon or better via HotKey. Default shortcut is ALT + S.</Paragraph>
+        <Paragraph Margin="0,5" >If you have mouse with more buttons, use its driver to set HotKey for STARTzjs menu to mouse button, so you can have menu in one click.</Paragraph>
+        <Paragraph Margin="0,5" >You can close STARTzjs by right click on program icon in taskbar and from context menu choose Close window.</Paragraph>
+        <Paragraph Margin="0,5,0,0" FontWeight="Bold" FontSize="12" >Mouse Control</Paragraph>
+        <Paragraph Margin="15,5" >Left click on menu item you launch the application. Left click and drag on menu item moves it to another position. You can switch columns by left click on column header and drag to another. Left click on menu where is no header or item, you can move whole menu cross the screen. Left double-click on menu you can hide the menu.</Paragraph>
+        <Paragraph Margin="15,5" >Rigth click on menu item or column header opens context menu..</Paragraph>
+        <Paragraph Margin="0,5,0,0" FontWeight="Bold" FontSize="12" >Touch Control</Paragraph>
+        <Paragraph Margin="15,5" >Touch on menu item you launch the application. Touch and hold on menu item or column header opens context menu. You can move menu item by touch and drag to new location. Touch on column header and drag to another header you switch the columns. Touching two fingers on menu, you can move whole menu cross screen.</Paragraph>
+        <Paragraph Margin="0,5,0,0" FontWeight="Bold" FontSize="12" >Adding applications</Paragraph>
+        <Paragraph Margin="15,5,30,5" >Applications or folders you can add to menu via context menu or by dragging files or folders into desired column of menu.</Paragraph>
+        <Paragraph Margin="15,0,0,5" >Definitely try to use IMPORT that helps to add even control panels or system shutdown options. See menu on left side of this help.</Paragraph>
+        <Paragraph Margin="0,5,0,0" FontWeight="Bold" FontSize="12" >Overview of menu functions</Paragraph>
+        <Paragraph Margin="15,5" >Menu item can be highlighted, hidden, changed its icon or assigned a HotKey. For file item you can set start as admin or autostart with Windows or uninstall installed application.</Paragraph>
+        <Paragraph Margin="0,5,0,0" FontWeight="Bold" FontSize="12" >Startup parameters</Paragraph>
+        <Paragraph Margin="15,5" >In context menu of menu item you can find Location where you can add startup parameters by putting file path into quotation marks and behind them you write parameters.</Paragraph>
+        <Paragraph Margin="15,0,0,0" >Examples:</Paragraph>
+        <Paragraph Margin="15,0,0,0" >&quot;C:\Windows\Notepad.exe&quot; D:\textový soubor.txt</Paragraph>
+        <Paragraph Margin="15,0,0,5" >&quot;Shutdown&quot; -r</Paragraph>
+        <Paragraph Margin="0,20,0,10" FontWeight="Bold" >TAPs</Paragraph>
+        <Paragraph Margin="0,5" >In Trigger-Action Plans create smart scena (plan) that waits for event that will execute an action. Improved task manager that can communicate with smart devices via MQTT broker. You can set up at certain time or when there is a file change in the folder or title app window change or when value meets critera in file, then will be executed an action like show message, play or mute sound, turn off pc or start/close application, switch display mode, pause playing video or execute web service. If you have Home Assitant, your smart devices allow you mute speakers when somebody calls you, pause video when you leave your room and so on.</Paragraph>
+        <Paragraph Margin="0,20,0,10" FontWeight="Bold" >Calculator, ALT + C</Paragraph>
+        <Paragraph Margin="0,5" >STARTzjs Calculator with big memory where you can write examples is in STARTzjs menu and default HotKey is ALT + C.</Paragraph>
+    </FlowDocument>
+    
+    <!-- Controls -->
+    <system:String x:Key="showuserfolder">Show user folder.</system:String>
+    <system:String x:Key="choosefolder">Choose folder</system:String>
+    <system:String x:Key="loading">Loading ...</system:String>
+    <!-- Error -->
+    <system:String x:Key="exceptionhappen">Exception happened in application. Please send this error report to author of program.</system:String>
+    <system:String x:Key="exceptionwhen">Please specify what you have just done before the exception happened:</system:String>
+    <system:String x:Key="writeemail">Enter you email:</system:String>
+    <system:String x:Key="sendemail">Send error report</system:String>
+    <system:String x:Key="copyreport">Copy to clipboard</system:String>
+    <system:String x:Key="sendemailtip">Error report will be send to mailbox pyramidak@gmail.com.</system:String>
+    <system:String x:Key="copyreporttip">Error report will be copied to Windows clipboard.&#x0a;In email created by you paste the report CTRL + V.</system:String>
+
+</ResourceDictionary>

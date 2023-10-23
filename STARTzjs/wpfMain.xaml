@@ -1,0 +1,301 @@
+﻿<Window x:Class="wpfMain"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:RootSpace"
+    Title="MainWindow" Height="357" Width="715" Name="wMain" WindowStyle="None" WindowStartupLocation="CenterScreen" Icon="/STARTzjs;component/STARTzjs.ico" WindowState="Normal" Visibility="Hidden" AllowsTransparency="True">
+    <Window.Resources>
+
+        <Thickness x:Key="MenuItemMargin" Left="-30" />
+
+        <Style TargetType="{x:Type MenuItem}">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="Normal"  />
+            <Setter Property="Padding" Value="2" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="Height" Value="38" />
+            <Setter Property="Margin" Value="{DynamicResource MenuItemMargin}" />
+            <!-- <Setter Property="Background" Value="{Binding Path=cMenu.Background}" /> -->            
+        </Style>
+        <Style x:Key="MenuTextBox" TargetType="{x:Type TextBox}">
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="Margin"  Value="10,4,0,5"  />
+            <Setter Property="Padding" Value="0,0,0,1" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="Background"  Value="WhiteSmoke"  />
+        </Style>
+        <Style x:Key="MenuTextBlock" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Margin"  Value="0"  />
+            <Setter Property="Padding" Value="12,6,0,0" />
+            <Setter Property="Foreground" Value="Black" />
+        </Style>
+        <Style x:Key="MenuCheckBox" TargetType="{x:Type CheckBox}">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Margin"  Value="12,7,0,0"  />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Foreground" Value="Black" />
+        </Style>
+        <Style x:Key="MenuImage" TargetType="{x:Type Image}">
+            <Setter Property="StretchDirection"  Value="DownOnly"  />
+            <Setter Property="Stretch"  Value="Uniform"  />
+            <Setter Property="Width"  Value="28" />
+            <Setter Property="Height"  Value="28" />
+        </Style>    
+        
+    </Window.Resources>
+
+    <!--
+    <Window.BitmapEffect >
+        <DropShadowBitmapEffect Color="Black" Direction="320" ShadowDepth="5" Softness="1" Opacity="0.5"/>
+    </Window.BitmapEffect >
+    -->
+     
+    <Window.ContextMenu >
+        <ContextMenu Name="cMenu" >
+            <MenuItem Name="smiItem">
+                <MenuItem.Header >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Name="imgItem" Style="{StaticResource MenuImage}" />
+                        <TextBox Name="txtItem" Text="Name" Style="{StaticResource MenuTextBox}" />
+                    </StackPanel>
+                </MenuItem.Header>
+                <MenuItem Name="smiEmpty">
+                    <MenuItem.Header >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Images/folder/RecycleBin_empty128.png" Style="{StaticResource MenuImage}" />
+                            <TextBlock Name="lblEmpty" Text="{DynamicResource vysypat}" Style="{StaticResource MenuTextBlock}" />
+                        </StackPanel>
+                    </MenuItem.Header>
+                </MenuItem>
+                <MenuItem Name="smiFolder">
+                    <MenuItem.Header >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{StaticResource Slozka_search}" Style="{StaticResource MenuImage}" />
+                            <TextBlock Text="{DynamicResource otevritslozku}" Style="{StaticResource MenuTextBlock}" />
+                        </StackPanel>
+                    </MenuItem.Header>
+                </MenuItem>
+                <MenuItem Name="smiRemove">
+                    <MenuItem.Header >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{StaticResource Soubor_smazat}" Style="{StaticResource MenuImage}" />
+                            <TextBlock Text="{DynamicResource odebrat}" Style="{StaticResource MenuTextBlock}" />
+                        </StackPanel>
+                    </MenuItem.Header>
+                </MenuItem>
+                <MenuItem Name="smiArguments">
+                    <MenuItem.Header >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{StaticResource Umisteni}" Style="{StaticResource MenuImage}" />
+                            <TextBlock Text="{DynamicResource umisteni}" Style="{StaticResource MenuTextBlock}"  />
+                        </StackPanel>
+                    </MenuItem.Header>
+                    <MenuItem Name="smiArgumentsEdit" StaysOpenOnClick="True">
+                        <MenuItem.Header >
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="{StaticResource Rename}" Style="{StaticResource MenuImage}" />
+                                <TextBox Name="txtArguments" Text="{DynamicResource arguments}" Style="{StaticResource MenuTextBox}" />
+                            </StackPanel>
+                        </MenuItem.Header>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Name="smiIconChange">
+                    <MenuItem.Header >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Name="imgIconChange" Style="{StaticResource MenuImage}" />
+                            <TextBlock Text="{DynamicResource ikona}" Style="{StaticResource MenuTextBlock}" />
+                        </StackPanel>
+                    </MenuItem.Header>
+                    <MenuItem Name="smiChangeSource">
+                        <MenuItem.Header >
+                            <StackPanel Orientation="Horizontal">
+                                <Image Style="{StaticResource MenuImage}" Source="{StaticResource Slozka_fotka}" />
+                                <TextBlock Text="{DynamicResource zmenitzdroj}" Style="{StaticResource MenuTextBlock}" />
+                            </StackPanel>
+                        </MenuItem.Header>
+                    </MenuItem>
+                    <MenuItem Name="smiSaveIcon">
+                        <MenuItem.Header >
+                            <StackPanel Orientation="Horizontal">
+                                <Image Style="{StaticResource MenuImage}" Source="{StaticResource Ulozit_obrazky}" />
+                                <TextBlock Text="{DynamicResource ulozitikonu}" Style="{StaticResource MenuTextBlock}" />
+                            </StackPanel>
+                        </MenuItem.Header>
+                    </MenuItem>
+                    <Separator/>
+               
+                </MenuItem>
+                <MenuItem Name="smiHotkey">
+                    <MenuItem.Header >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{StaticResource HotKey}" Style="{StaticResource MenuImage}" />
+                            <TextBlock Name="lblHotkey" Text="{DynamicResource hotkey}" Style="{StaticResource MenuTextBlock}"  />
+                        </StackPanel>
+                    </MenuItem.Header>
+                </MenuItem>
+                <MenuItem Name="smiHideStart">
+                    <MenuItem.Header >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{StaticResource Gear}" Style="{StaticResource MenuImage}" />
+                            <CheckBox Name="ckbHideStart" Content="{DynamicResource hidestart}" Style="{StaticResource MenuCheckBox}" />
+                        </StackPanel>
+                    </MenuItem.Header>
+                </MenuItem>
+                <MenuItem Name="smiHighlighted">
+                    <MenuItem.Header >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{StaticResource Oblibene}" Style="{StaticResource MenuImage}" />
+                            <CheckBox Name="ckbHighlighted" Content="{DynamicResource zvyrazneny}" Style="{StaticResource MenuCheckBox}" />
+                        </StackPanel>
+                    </MenuItem.Header>
+                </MenuItem>
+                <MenuItem Name="smiHidden">
+                    <MenuItem.Header >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{StaticResource Skryte}" Style="{StaticResource MenuImage}" />
+                            <CheckBox Name="ckbHidden" Content="{DynamicResource skryty}" Style="{StaticResource MenuCheckBox}"/>
+                        </StackPanel>
+                    </MenuItem.Header>
+                </MenuItem>
+                <MenuItem Name="smiAdmin" ToolTip="{DynamicResource spoustetjakospravce}">
+                    <MenuItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{StaticResource UAC}" Style="{StaticResource MenuImage}" />
+                            <CheckBox Name="ckbAdmin" Content="{DynamicResource admin}" Style="{StaticResource MenuCheckBox}" />
+                        </StackPanel>
+                    </MenuItem.Header>
+                </MenuItem>
+                <MenuItem Name="smiAutorun" ToolTip="{DynamicResource spoustetswindows}">
+                    <MenuItem.Header >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Name="imgAutorun" Style="{StaticResource MenuImage}" />
+                            <CheckBox Name="ckbAutorun" Content="{DynamicResource autostart}" Style="{StaticResource MenuCheckBox}" />
+                        </StackPanel>
+                    </MenuItem.Header>
+                </MenuItem>
+                <MenuItem Name="smiUninstall">
+                    <MenuItem.Header >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Images/folder/RecycleBin_empty128.png" Style="{StaticResource MenuImage}" />
+                            <TextBlock Text="{DynamicResource odinstalovat}" Style="{StaticResource MenuTextBlock}" />
+                        </StackPanel>
+                    </MenuItem.Header>
+                </MenuItem>
+
+            </MenuItem>
+            <MenuItem Name="smiAddFile" >
+                <MenuItem.Header >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{StaticResource Soubor_pridat}" Style="{StaticResource MenuImage}" />
+                        <TextBlock Text="{DynamicResource pridatprogramy}" Style="{StaticResource MenuTextBlock}" />
+                    </StackPanel>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem Name="smiAddFolder" >
+                <MenuItem.Header >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{StaticResource Slozka_pridat}" Style="{StaticResource MenuImage}" />
+                        <TextBlock Text="{DynamicResource pridatslozku}" Style="{StaticResource MenuTextBlock}" />
+                    </StackPanel>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem Name="smiAddLink" >
+                <MenuItem.Header >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{StaticResource Web_pridat}" Style="{StaticResource MenuImage}" />
+                        <TextBlock Text="{DynamicResource pridatlink}" Style="{StaticResource MenuTextBlock}" />
+                    </StackPanel>
+                </MenuItem.Header>
+            </MenuItem>
+
+            <Separator/>
+
+            <MenuItem Name="smiColumn">
+                <MenuItem.Header >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{StaticResource Soupec}" Style="{StaticResource MenuImage}" />
+                        <TextBox Name="txtColumn" Text="{DynamicResource tema}" Style="{StaticResource MenuTextBox}" />
+                    </StackPanel>
+                </MenuItem.Header>
+                <MenuItem Name="smiRunAll">
+                    <MenuItem.Header >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{StaticResource Sloupec_spustit}" Style="{StaticResource MenuImage}" />
+                            <TextBlock Text="{DynamicResource spustitprogramy}" Style="{StaticResource MenuTextBlock}"  />
+                        </StackPanel>
+                    </MenuItem.Header>
+                </MenuItem>
+                <MenuItem Name="smiSortItems">
+                    <MenuItem.Header >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{StaticResource Abc}" Style="{StaticResource MenuImage}" />
+                            <CheckBox Name="ckbSortItems" Content="{DynamicResource polozkyabecedne}" Style="{StaticResource MenuCheckBox}" />
+                        </StackPanel>
+                    </MenuItem.Header>
+                </MenuItem>
+                <MenuItem Name="smiColumnHidden">
+                    <MenuItem.Header >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{StaticResource Skryte}" Style="{StaticResource MenuImage}" />
+                            <CheckBox Name="ckbColumnHidden" Content="{DynamicResource skrytysloupec}" Style="{StaticResource MenuCheckBox}" />
+                        </StackPanel>
+                    </MenuItem.Header>
+                </MenuItem>
+                <MenuItem Name="smiColumnRemove">
+                    <MenuItem.Header >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{StaticResource Sloupec_smazat}" Style="{StaticResource MenuImage}" />
+                            <TextBlock Text="{DynamicResource odstranitsloupec}" Style="{StaticResource MenuTextBlock}"  />
+                        </StackPanel>
+                    </MenuItem.Header>
+                </MenuItem>
+
+            </MenuItem>
+            <MenuItem Name="smiAddColumn">
+                <MenuItem.Header >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{StaticResource Sloupec_pridat}" Style="{StaticResource MenuImage}" />
+                        <TextBlock Text="{DynamicResource novysloupec}" Style="{StaticResource MenuTextBlock}"  />
+                    </StackPanel>
+                </MenuItem.Header>
+            </MenuItem>
+
+            <Separator/>
+
+            <MenuItem Name="smiHideAll">
+                <MenuItem.Header >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Name="imgHideAll" Source="{StaticResource Skryte}" Style="{StaticResource MenuImage}" />
+                        <TextBlock Name="lblHideAll" Text="{DynamicResource schovatskryte}" Style="{StaticResource MenuTextBlock}"  />
+                    </StackPanel>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem Name="smiLock" ToolTip="Zamknout/odemknout menu.">
+                <MenuItem.Header >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Name="imgLock" Source="{StaticResource Unlock}" Style="{StaticResource MenuImage}" />
+                        <TextBox Name="txtLock" Text="{DynamicResource jmeno}" Style="{StaticResource MenuTextBox}" ToolTip="{DynamicResource napistectyricislice}" MaxLength="4" MinWidth="80" />
+                    </StackPanel>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem Name="smiSearch">
+                <MenuItem.Header >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{StaticResource Hledat}" Style="{StaticResource MenuImage}"/>
+                        <TextBlock Name="lblSearch" Text="{DynamicResource vyhledatnenalezene}" Style="{StaticResource MenuTextBlock}" />
+                    </StackPanel>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem Name="smiRemoveNotExist">
+                <MenuItem.Header >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{StaticResource Hledat_smazat}" Style="{StaticResource MenuImage}" />
+                        <TextBlock Name="lblRemoveNotExist" Text="{DynamicResource odebratnenalezene}" Style="{StaticResource MenuTextBlock}"  />
+                    </StackPanel>
+                </MenuItem.Header>
+            </MenuItem>
+        </ContextMenu>
+    </Window.ContextMenu >
+
+    <StackPanel Orientation="Horizontal" Name="panStack"></StackPanel>
+</Window>

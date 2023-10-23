@@ -1,0 +1,236 @@
+<ResourceDictionary xmlns ="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <!-- Buttons -->
+    <system:String x:Key="zavrit">Zavřít</system:String>
+    <system:String x:Key="ulozit">Uložit</system:String>
+    <system:String x:Key="pridat">Přidat</system:String>
+    <system:String x:Key="odebrat">Odebrat</system:String>
+    <system:String x:Key="prejmenovat">Přejmenovat</system:String>
+    <system:String x:Key="storno">Storno</system:String>
+    <system:String x:Key="aktualizovat">Aktualizovat</system:String>
+    <system:String x:Key="smazat">Smazat</system:String>
+
+    <!-- Menu item -->
+    <system:String x:Key="vysypat">Vysypat</system:String>
+    <system:String x:Key="otevritslozku">Otevřít složku</system:String>
+    <system:String x:Key="umisteni">Umístění</system:String>
+    <system:String x:Key="arguments">Arguments</system:String>
+    <system:String x:Key="ikona">Ikona</system:String>
+    <system:String x:Key="zmenitzdroj">Změnit zdroj</system:String>
+    <system:String x:Key="ulozitikonu">Uložit ikonu</system:String>
+    <system:String x:Key="hotkey">HotKey</system:String>
+    <system:String x:Key="zvyrazneny">Zvýrazněný</system:String>
+    <system:String x:Key="skryty">Skrytý</system:String>
+    <system:String x:Key="admin">Správce</system:String>
+    <system:String x:Key="autostart">Autostart</system:String>
+    <system:String x:Key="odinstalovat">Odinstalovat</system:String>
+    <system:String x:Key="spoustetjakospravce">Spouštět jako správce</system:String>
+    <system:String x:Key="spoustetswindows">Spouštět s Windows</system:String>
+    <system:String x:Key="pridatprogramy">Přidat programy</system:String>
+    <system:String x:Key="pridatslozku">Přidat složku</system:String>
+    <system:String x:Key="pridatlink">Přidat web</system:String>
+    <system:String x:Key="hidestart">API akce</system:String>
+    <system:String x:Key="vloztelink">Vložte webový odkaz</system:String>
+    <system:String x:Key="apilink">API akci spouštět na pozadí</system:String>
+    <!-- Menu column -->
+    <system:String x:Key="tema">Téma</system:String>
+    <system:String x:Key="spustitprogramy">Spustit vše</system:String>
+    <system:String x:Key="polozkyabecedne">Setřídit abecedně</system:String>
+    <system:String x:Key="skrytysloupec">Skrytý sloupec</system:String>
+    <system:String x:Key="odstranitsloupec">Odstranit sloupec</system:String>
+    <system:String x:Key="novysloupec">Nový sloupec</system:String>
+    <system:String x:Key="schovatskryte">Schovat skryté</system:String>
+    <system:String x:Key="jmeno">Jméno</system:String>
+    <system:String x:Key="napistectyricislice">Napište čtyři číslice.</system:String>
+    <system:String x:Key="vyhledatnenalezene">Vyhledat nenalezené</system:String>
+    <system:String x:Key="odebratnenalezene">Odebrat nenalezené</system:String>
+
+    <!-- Setting -->
+    <system:String x:Key="nastavenistartzjs">Nastavení STARTzjs</system:String>
+    <system:String x:Key="oprogramu">O programu</system:String>
+    <system:String x:Key="ovladani">Ovládání</system:String>
+    <system:String x:Key="importovat">Import</system:String>
+    <system:String x:Key="vzhled">Vzhled</system:String>
+    <system:String x:Key="budik">TAPs</system:String>
+    <system:String x:Key="ukladani">Ukládání</system:String>
+    <!-- About -->
+    <system:String x:Key="autokontrolanoveverze">Stahovat novou verzi</system:String>
+    <system:String x:Key="spoustetpristartuwindows">Spouštět při startu Windows</system:String>
+    <!-- Windows -->
+    <system:String x:Key="windowshake">Zatřesení oknem minimalizuje všechna okna</system:String>
+    <system:String x:Key="hibernate">Aktivní režim hibernace systému</system:String>
+    <!-- Look of Menu -->
+    <system:String x:Key="vzhledmenu">Vzhled menu</system:String>
+    <system:String x:Key="itemlook">Vzhled položek</system:String>
+    <system:String x:Key="barvamotivuwindows">Barva motivu Windows</system:String>
+    <system:String x:Key="barvaplochy">Barva plochy</system:String>
+    <system:String x:Key="vlastnibarva">Vlastní barva</system:String>
+    <system:String x:Key="pruhlednost">Průhlednost</system:String>
+    <system:String x:Key="velikostikon">Velikost ikon</system:String>
+    <!-- MQTT -->
+    <system:String x:Key="broker">Broker IP adresa</system:String>
+    <system:String x:Key="port">Port</system:String>
+    <system:String x:Key="user">Uživatel</system:String>
+    <system:String x:Key="pass">Heslo</system:String>
+    <system:String x:Key="connectiontest">Otestovat připojení</system:String>
+    <!-- Alarm -->
+    <system:String x:Key="tbudik">Spoušť</system:String>
+    <system:String x:Key="itbudik">Trigger-Action Plans + MQTT</system:String>
+    <system:String x:Key="tkdy">Když</system:String>
+    <system:String x:Key="takce">Akce</system:String>
+    <system:String x:Key="tnastaveno">Nastavení</system:String>
+    <system:String x:Key="tvolba1">Volba</system:String>
+    <system:String x:Key="tvolba2">Událost</system:String>
+    <system:String x:Key="taktivni">Aktivní</system:String>
+    <system:String x:Key="topakovat">Opakovat</system:String>
+    <system:String x:Key="time">Čas</system:String>
+    <system:String x:Key="directory">Složka</system:String>
+    <system:String x:Key="application">Program</system:String>
+    <system:String x:Key="whentitlewindow">čekat, až titul okna programu</system:String>
+    <system:String x:Key="originate">vznikne</system:String>
+    <system:String x:Key="tend">zanikne</system:String>
+    <system:String x:Key="endwithID">z. s ID</system:String>
+    <system:String x:Key="tminute">minut</system:String>
+    <system:String x:Key="thour">hodin</system:String>
+    <system:String x:Key="Whencome">Když nastane</system:String>
+    <system:String x:Key="tADD">Přidat</system:String>
+    <system:String x:Key="tDEL">Odebrat</system:String>
+    <system:String x:Key="Startalarm">Spustit</system:String>
+    <system:String x:Key="usetime">použít čas</system:String>
+    <system:String x:Key="Executeaction">Spustit akci</system:String>
+    <system:String x:Key="Launchprogram">Spustit program</system:String>
+    <system:String x:Key="ShutdownPC">Vypnout PC</system:String>
+    <system:String x:Key="Openfile">Spustit program</system:String>
+    <system:String x:Key="Closewindow">Zavřít program</system:String>
+    <system:String x:Key="Showmessage">Zobrazit zprávu</system:String>
+    <system:String x:Key="endprocessby">ukončit proces pomocí</system:String>
+    <system:String x:Key="tname">názvu</system:String>
+    <system:String x:Key="windowtitle">titulu okna</system:String>
+    <system:String x:Key="tselectfolder">Vyberte složku, ve které bude kontrolován seznam souborů. Pokud dojde ke změně, bude vyvolána akce.</system:String>
+    <system:String x:Key="tselectfile">Vyberte soubor s jednou hodnotou uvnitř, která se bude hlídat.</system:String>
+    <system:String x:Key="entermessage">vložte sdělení</system:String>
+    <system:String x:Key="selectalarmsound">vyberte zvuk alarmu</system:String>
+    <system:String x:Key="chooserunningwindow">vyberte běžící program</system:String>
+    <system:String x:Key="tenterappname">Napište název položky STARTzjs menu nebo vyberte program:</system:String>
+    <system:String x:Key="t5">za 5 minut</system:String>
+    <system:String x:Key="t10">za 10 minut</system:String>
+    <system:String x:Key="t15">za 15 minut</system:String>
+    <system:String x:Key="t30">za 30 minut</system:String>
+    <system:String x:Key="t1">za hodinu</system:String>
+    <system:String x:Key="t2">za 2 hodiny</system:String>
+    <system:String x:Key="t4">za 4 hodiny</system:String>
+    <system:String x:Key="t6">za 6 hodin</system:String>
+    <system:String x:Key="t12">za 12 hodin</system:String>
+    <system:String x:Key="t24">za den</system:String>
+    <system:String x:Key="tLock">Zamknout</system:String>
+    <system:String x:Key="tUnlock">Odemknout</system:String>
+    <system:String x:Key="StandBy">Uspat</system:String>
+    <system:String x:Key="LogOff">Odhlásit</system:String>
+    <system:String x:Key="PowerOff">Vypnout</system:String>
+    <system:String x:Key="Restart">Restartovat</system:String>
+    <system:String x:Key="mqtt">MQTT</system:String>
+    <system:String x:Key="choosetopic">CSV soubor obsahuje v tomto pořadí: Zařízení, Veličinu, Hodnotu, Datum&amp;Čas</system:String>
+    <system:String x:Key="cbxDevice">Zařízení</system:String>
+    <system:String x:Key="cbxVariable">Veličina</system:String>
+    <system:String x:Key="tvalue">Hodnota</system:String>
+    <system:String x:Key="choosefile">Vyberte soubor obsahující pouze jednu hodnotu, která se bude kontrolovat.</system:String>
+    <system:String x:Key="gfile">Hlídat</system:String>
+    <system:String x:Key="cchange">změnu</system:String>
+    <system:String x:Key="cvalue">hodnotu</system:String>
+    <system:String x:Key="tfile">Soubor</system:String>
+    <system:String x:Key="ckbStop">Zastavit program</system:String>
+    <system:String x:Key="alarmstate">Stav plánu</system:String>
+    <system:String x:Key="lblAlarm">Vyberte ze seznamu plánů ten plán, u kterého chcete měnit stav.</system:String>
+    <system:String x:Key="changealarmstate">Změnit stav plánu</system:String>
+    <system:String x:Key="tactivate">Aktivovat</system:String>
+    <system:String x:Key="tdeactivate">Deaktivovat</system:String>
+    <system:String x:Key="number">Č.</system:String>
+    <system:String x:Key="tsendemail">Poslat email</system:String>
+    <system:String x:Key="tto">Příjemce emailu</system:String>
+    <system:String x:Key="tfrompass">Email a heslo uživatele</system:String>
+    <system:String x:Key="tzprava">Zprávu napište v záložce Zobrazit zprávu.</system:String>
+    <system:String x:Key="tcopy">Kopírovat soubor</system:String>
+    <system:String x:Key="filecopy">Tento soubor</system:String>
+    <system:String x:Key="destination">Do umístění</system:String>
+    <system:String x:Key="overwrite">Přepisovat</system:String>
+    <system:String x:Key="tchange">Událost změny</system:String>
+    <system:String x:Key="tscreen">Režim obrazovky</system:String>
+    <system:String x:Key="DisplayInternal">Hlavní obrazovka</system:String>
+    <system:String x:Key="DisplayClone">Duplikovat obrazovku</system:String>
+    <system:String x:Key="DisplayExtend">Rozšířit obrazovku</system:String>
+    <system:String x:Key="DisplayExternal">Druhá obrazovka</system:String>
+    <system:String x:Key="TopicSubscribe">Subscribe Topic - Naslouchat téma</system:String>
+    <system:String x:Key="SubscribeValue">Pokud necháte hodnotu prázdnou, jakákoliv obdržená hodnota spustí akci. Hodnota se vždy přidá do zprávy, emailu, nebo se použije na stisk kláves. </system:String>
+    <system:String x:Key="TopicPublish">Publish Topic - Poslat téma</system:String>
+    <system:String x:Key="reconnectMQTT">Provést znovu připojení clienta.</system:String>
+    <system:String x:Key="Payload">Hodnota</system:String>
+    <system:String x:Key="Keys">Stisk kláves</system:String>
+    <system:String x:Key="Keystroke">Napište klávesy co se mají stisknout. Například závoláním stisku klávesy mezerník (napište mezeru) můžete pauznout video.</system:String>
+    <system:String x:Key="Mute">Vypnout zvuk</system:String>
+    <system:String x:Key="MuteInfo">Akce vypne nebo zapne zvuk.</system:String>
+    <system:String x:Key="interval">Použít čas jako opakující se Interval</system:String>
+
+    <!-- Import -->
+    <system:String x:Key="importpolozekdomenu">Import položek do menu</system:String>
+    <system:String x:Key="zalohovanysoubor">Zálohovaný soubor</system:String>
+    <system:String x:Key="zastupcinaplose">Zástupci na ploše</system:String>
+    <system:String x:Key="ovladacipanely">Ovládací panely</system:String>
+    <system:String x:Key="hlavnipanelwindows">Hlavní panel Windows</system:String>
+    <system:String x:Key="tlacitkovalistatotalcmd">Tlačítková lišta TotalCmd</system:String>
+    <system:String x:Key="volbyvypnutisystemu">Volby vypnutí systému</system:String>
+    <system:String x:Key="vektiva">Vektiva.com API</system:String>
+    <system:String x:Key="vektivaopen">Otevřít okno</system:String>
+    <system:String x:Key="vektivaclose">Zavřít okno</system:String>
+    <system:String x:Key="vektivastop">Uvolnit okno</system:String>
+    <system:String x:Key="vektivafix">Zafixovat okno</system:String>
+    <system:String x:Key="vektivaapi">Pro ovládání okna zařízení Vektiva vložte z webu vektiva.online z menu User Account 'Remote ID' a 'Remote KEY' a z Control Center v Setting pod Info je 'Device ID'. Hodnoty oddělte znakem '/' bez mezer.</system:String>
+    <system:String x:Key="winstore">Windows Store</system:String>
+    <!-- Location -->
+    <system:String x:Key="umistenidatovehosouboru">Umístění datového souboru</system:String>
+    <system:String x:Key="dokumenty">Dokumenty</system:String>
+    <!-- Information -->
+    <system:String x:Key="seznamtesesovladanim">Seznamte se s ovládáním</system:String>
+    <system:String x:Key="roztahnout">Roztáhnout</system:String>
+    <FlowDocument x:Key="napoveda" FontFamily="Segoe UI" FontSize="13">
+        <Paragraph Margin="0,0,0,10" FontWeight="Bold" >STARTzjs menu, ALT + S</Paragraph>
+        <Paragraph Margin="0,5" >Program prošel řadou úprav a vzhled není jedinná velká změna. Ikonu STARTzjs programu už nenajdete v systray, pouze na hlavním panelu. Od Windows 8 můžete ikonu připnout na samí začátek panelu a mít tak Start menu, kde jste zvyklý. Menu vyvoláte kliknutím standardně na ikonu nebo klávesou zkratkou (HotKey) ve výchozím nastavení ALT + S.</Paragraph>
+        <Paragraph Margin="0,5" >Pokud máte lepší myš, nezapomeňte si v nastavení myši nastavit HotKey STARTzjs menu k některému tlačítku na myši, aby jste získali menu na jeden klik.</Paragraph>
+        <Paragraph Margin="0,5" >Menu i celý program ukončíte pravým kliknutím na ikonu programu na hlavním panelu a vyberete Zavřít okno.</Paragraph>
+        <Paragraph Margin="0,5,0,0" FontWeight="Bold" FontSize="12" >Ovládání myší</Paragraph>
+        <Paragraph Margin="15,5" >Levým kliknutím na položku spustíte program. Levým tažením za položku ji můžete v menu přesunout. Levým tažením za hlavičku (nadpis) sloupce můžete prohazovat sloupce. Levým tažením za sloupec (mimo hlavičku) můžete menu posunovat po obrazoce. Levým dvojitým kliknutím na sloupec skryjete menu.</Paragraph>
+        <Paragraph Margin="15,5" >Pravým kliknutím na položku nebo sloupec vyvoláte contextovou nabídku.</Paragraph>
+        <Paragraph Margin="0,5,0,0" FontWeight="Bold" FontSize="12" >Ovládání dotykem</Paragraph>
+        <Paragraph Margin="15,5" >Dotykem na položku spustíte program. Dlouhým dotykem (počkáte) na položku nebo sloupec otevřete kontextovou nabídku. Přetažení položky aktivujte dotykem a posunem prstu na položce (opakujte, pokud nereaguje napoprvé). Tažením za hlavičku sloupce můžete prohazovat sloupce. Při dotyku dvěma prsty můžete menu posunovat po obrazoce.</Paragraph>
+        <Paragraph Margin="0,5,0,0" FontWeight="Bold" FontSize="12" >Přidávání programů</Paragraph>
+        <Paragraph Margin="15,5,30,5" >Programy i složky můžete přidávat do programu přes contextovou nabídku nebo například přetažením souborů (i zástupců či složek) odkudkoliv (např. pracovní plochy) do žádaného sloupce v menu.</Paragraph>
+        <Paragraph Margin="15,0,0,5" >Nezapomeňte pro přidávání programů také využít IMPORT viz volba v levém menu.</Paragraph>
+        <Paragraph Margin="0,5,0,0" FontWeight="Bold" FontSize="12" >Přehled funkcí menu</Paragraph>
+        <Paragraph Margin="15,5" >Položky můžete zvýraznit, skrýt, změnit jim ikonu a samozřejmě je spouštět. Můžete nastavit autostart s Windows nebo programy odinstalovat. Můžete nastavit HotKey k jakémukoliv programu.</Paragraph>
+        <Paragraph Margin="0,5,0,0" FontWeight="Bold" FontSize="12" >Parametry spouštění</Paragraph>
+        <Paragraph Margin="15,5" >V contextové nabídce položky můžete přejít do Umístění, kde můžete přidat parametry tak, že cestu k souboru dáte do uvozovek a za ně napíšete parametry.</Paragraph>
+        <Paragraph Margin="15,0,0,0" >Příklady:</Paragraph>
+        <Paragraph Margin="15,0,0,0" >&quot;C:\Windows\Notepad.exe&quot; D:\textový soubor.txt</Paragraph>
+        <Paragraph Margin="15,0,0,5" >&quot;Shutdown&quot; -r</Paragraph>
+        <Paragraph Margin="0,20,0,10" FontWeight="Bold" >TAPs</Paragraph>
+        <Paragraph Margin="0,5" >V Trigger-Action Plans nastavte chytré scény (plány), které čekají na událost, po které provedou určenou akci. Vylepšený správce úloh, který dokáže komunikovat i s chytrými zařízeními přes MQTT broker. Můžete například po stažení souboru uspat počítač. V určitém čase spustit nebo zavřít aplikaci nebo si poslat zprávu na email. Pokud máte Home Assistenta, tak možností je opravdu hodně. Vypnout zvuk, když vám někdo volá. Přepnout obraz na TV, když je zapnuta. Pauznout video, když odejdete z místnosti.</Paragraph>
+        <Paragraph Margin="0,20,0,10" FontWeight="Bold" >Kalkulačka, ALT + C</Paragraph>
+        <Paragraph Margin="0,5" >Kalkulačku nyní spustíte ze STARTzjs menu a výchozí HotKey je ALT + C.</Paragraph>
+    </FlowDocument>
+
+    <!-- Controls -->
+    <system:String x:Key="showuserfolder">Zobrazit složku uživatele.</system:String>
+    <system:String x:Key="choosefolder">Vyberte složku</system:String>
+    <system:String x:Key="loading">Nahrává se ...</system:String>
+    <!-- Error -->
+    <system:String x:Key="exceptionhappen">Nastala výjimka v aplikaci. Zašlete hlášení o chybě autoru programu.</system:String>
+    <system:String x:Key="exceptionwhen">Napište, co jste právě dělali než nastala výjimka:</system:String>
+    <system:String x:Key="writeemail">Napište váš email:</system:String>
+    <system:String x:Key="sendemail">Poslat hlášení o chybě</system:String>
+    <system:String x:Key="copyreport">Zkopírovat hlášení</system:String>
+    <system:String x:Key="sendemailtip">Hlášení o chybě bude posláno do mailboxu pyramidak@gmail.com.</system:String>
+    <system:String x:Key="copyreporttip">Hlášení zkopírovat do schránky Windows.&#x0a;Do vámi vytvořeného emailu vložíte CTRL + V.</system:String>
+
+
+</ResourceDictionary>
